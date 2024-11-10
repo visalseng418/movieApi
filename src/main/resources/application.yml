@@ -1,0 +1,38 @@
+spring:
+  datasource:
+    username: springuser
+    password: springpass
+    url: jdbc:postgresql://localhost:5432/movieapi
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: "sengvisaluchiha@gmail.com"
+    password: "mtit asjw dtda ahco"
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+project:
+  poster: poster/
+
+
+base:
+  url: "http://localhost:8080"
+
+
+
+
